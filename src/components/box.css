@@ -1,0 +1,26 @@
+.message {
+    position: relative;
+    text-align: left;
+    padding: 0 10px;
+    margin: 10px 10px 0;
+    display: flex;
+    width: 570px;
+    flex-direction: row;
+    line-height: 50px;
+    background-color: #565b66;
+    min-height: 50px;
+    color: white;
+    border-radius: 12px;
+
+  }
+
+  .msg {
+    width: calc(50%);
+  }
+
+  .time {
+    width: calc(50%);
+    text-align: center;
+    font-size: 10px;
+    font-style: italic;
+  }
