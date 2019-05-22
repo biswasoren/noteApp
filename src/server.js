@@ -21,6 +21,26 @@ app.use((req, res, next) => {
   
   next();
 });
+
+const path = require('path');
+const port = process.env.PORT || 4000;
+
+//Static file declaration
+app.use(express.static(path.join(__dirname, '../build')));
+
+//production mode
+if(process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, '../build')));
+  //
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../build/index.html'));
+  })
+}
+//build mode
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname+'/index.html'));
+})
+
 require('./api').default(app)
 
 app.get('/', (req, res) => {
@@ -28,8 +48,8 @@ app.get('/', (req, res) => {
 })
 
 
-server.listen(4000)
-console.log('app running on port ', 4000);
+server.listen(port)
+console.log('app running on port ', port);
 
 // Socket
 
