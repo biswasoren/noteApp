@@ -25,3 +25,4 @@ Launches backend server
 TODO:
 
 - Add Jenkin Pipeline
+- Deploy to VM
