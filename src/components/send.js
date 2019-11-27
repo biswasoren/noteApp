@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import './send.css'
 import { Form, TextArea, Button, Icon } from 'semantic-ui-react'
 import { socket } from './socket';
