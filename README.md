@@ -20,3 +20,8 @@ Launches backend server
 - Chat
 - Emoji detects tone of text
 - User listing (Online)
+
+
+TODO:
+
+- Add Jenkin Pipeline
