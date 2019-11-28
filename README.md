@@ -24,5 +24,5 @@ Launches backend server
 
 TODO:
 
-- Add Jenkin Pipeline
-- Deploy to VM
+- Add Jenkin Pipeline - Done
+- Deploy to Heroku
