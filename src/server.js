@@ -28,6 +28,12 @@ const port = process.env.PORT || 4000;
 //Static file declaration
 app.use(express.static(path.join(__dirname, '../build')));
 
+require('./api').default(app)
+
+app.get('/', (req, res) => {
+  return res.status(200).send({'message': 'Welcome !'});
+})
+
 //production mode
 if(process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../build')));
@@ -41,11 +47,7 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname+'/index.html'));
 })
 
-require('./api').default(app)
 
-app.get('/', (req, res) => {
-  return res.status(200).send({'message': 'Welcome !'});
-})
 
 
 server.listen(port)
