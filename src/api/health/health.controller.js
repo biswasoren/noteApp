@@ -1,5 +1,5 @@
 export function send(req, res) {
-    res.json({message: 'I am healthy !'});
+    res.json({message: 'Yeah !! I am Fine'});
   }
 
   export default {
