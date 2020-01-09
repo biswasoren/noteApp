@@ -16,13 +16,5 @@ Launches backend server
 ### Features
 
 - Login
-- Register
-- Chat
-- Emoji detects tone of text
-- User listing (Online)
-
-
-TODO:
-
-- Add Jenkin Pipeline - Done
-- Deploy to Heroku
+- Sign-Up
+- CRUD Notes
