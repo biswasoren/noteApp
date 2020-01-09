@@ -1,0 +1,54 @@
+.conatiner {
+    height: 100%;
+    width: 100%;
+  }
+
+.text {
+  display: flex;
+  justify-content: space-between;
+  width: 180px;
+  align-items: center;
+}
+
+.header {
+    height: 11%;
+    background: #52B376;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.btn {
+  background: #31714A;
+  color: white;
+  border: 0;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.input {
+  border: 1px solid white;
+  width: 250px;
+  height: 30px;
+  background: #52B376;
+  color: white;
+  margin-right: 20px;
+  padding: 0 10px;
+}
+
+input[type=text]:focus {
+  outline: 0;
+}
+
+.signup {
+  margin-top: 10px;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.panel {
+  background: #DCEFE7;
+}

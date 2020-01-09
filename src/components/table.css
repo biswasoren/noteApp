@@ -1,0 +1,16 @@
+.thead {
+  background: #52B376;
+  color: white;
+}
+
+.th {
+  height: 35px;
+}
+
+.tr {
+  height: 35px;
+}
+
+.tr:nth-child(odd) {
+  background: #EDECE9;
+}

@@ -1,9 +1,9 @@
 const register = require('./register');
-const message = require('./message');
+const note = require('./note');
 const health = require('./health');
 
 export default function (app) {
     app.use('/api/register', register);
-    app.use('/api/message', message);
+    app.use('/api/note', note);
     app.use('/api/health', health);
 }

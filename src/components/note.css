@@ -1,0 +1,53 @@
+.panel {
+  background: #DCEFE7;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #60987F;
+}
+
+.inputBoxes {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  border: none;
+}
+
+.inputForm {
+  border: none;
+  border-bottom: 1px solid #60987F;
+  width: 250px;
+  height: 30px;
+  color: #60987F;
+  margin-right: 20px;
+  padding: 0 10px;
+  background: none;
+}
+
+.textbox {
+  margin-top: 30px;
+  width: 525px;
+  height: 60px;
+  resize: none;
+  border: none;
+  border-bottom: 1px solid #60987F;
+  color: #60987F;
+  margin-right: 20px;
+  padding: 0 10px;
+}
+
+.textbox:focus {
+  outline: none;
+}
+
+.inputForm:focus {
+  border-bottom: 1px solid #60987F;
+  outline: none;
+  width: 250px;
+  height: 30px;
+  color: #60987F;
+  margin-right: 20px;
+  padding: 0 10px;
+}
